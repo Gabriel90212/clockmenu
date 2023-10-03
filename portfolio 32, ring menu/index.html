@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Stargraph</title>
+</head>
+<body>
+    <div class="menu">
+        <a href="#account">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#info">
+            <i class="fa-solid fa-info"></i>  
+        </a>
+        <a href="#facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="#devianart">
+            <i class="fa-brands fa-deviantart"></i>
+        </a>
+        <a href="#quora">
+            <i class="fa-brands fa-quora"></i>
+        </a>
+        <a href="#paint">
+            <i class="fa-solid fa-paintbrush"></i>
+        </a>
+        <a href="#music">
+            <i class="fa-solid fa-music"></i>
+        </a>
+        <button id="toggle-btn">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <div class="picture">
+        <img src="img/2.png" alt="pic">
+    </div>
+    <h1>GABRIEL K ARANDA C</h1>
+    <div class="paragraph">
+        <p>The future is greater as we get closer to it.
+
+            Conserve ur energy, play with ur energy, produce better energy.
+            
+            Show me ur colours
+            
+            
+            
+            I am the standard of today's young people who work for the collabs, I am a great student, i have my own workshop and enterprise, I like mining Bitcoin for paying bills since it contributes solving math problems.
+            
+            
+            
+            “I figure since everything does quantum entanglement all the time we just need to settle a little more so we understand how it can transport more than data” 
+            
+            
+            
+            This is like drawing by typing a poem 
+            
+            Somethings shouldn’t be explain
+            
+            
+            
+            I know how to do it 
+            
+            I know 21 languages 
+            
+            If I don’t I look 4 it 2 hav it done as a person
+            
+            
+            
+            This here It will always be a peace of art just becoz I enjoy it.
+            
+            I have study 21 languages and decided to go with html css and JavaScript because they are the most popular and 95% of the backend languages are the same. If you like the type of organize and responsible person I a, we can add great value.
+            
+            
+            
+            I'm a super cool astronaut wanna be, would you like someone like me in your team?
+        </p>
+    </div>
+    <script>
+        let toggleBtn = document.getElementById("toggle-btn");
+        let menuItems = document.querySelectorAll(".menu a");
+        let menuActive = false;
+
+        toggleBtn.addEventListener("click", () => {
+            if (!menuActive) {
+                menuItems[0].style.transform = "translate(160px,0)";
+                menuItems[1].style.transform = "translate(160px,90px)";
+                menuItems[2].style.transform = "translate(90px,160px)";
+                menuItems[3].style.transform = "translate(0,160px)";
+                menuItems[4].style.transform = "translate(-160px,0)";
+                menuItems[5].style.transform = "translate(-150px,-90px)";
+                menuItems[6].style.transform = "translate(-90px,-160px)";
+                menuItems[7].style.transform = "translate(0,-160px)";
+                menuItems[8].style.transform = "translate(-120px,125px)";
+                menuItems[9].style.transform = "translate(110px,-135px)";
+                menuActive = true;
+            } else {
+                menuItems.forEach((menuItems) => {
+                    menuItems.style.transform = "translate(0, 0)";
+                })
+            }
+        });
+    </script>
+</body>
+
+</html>
